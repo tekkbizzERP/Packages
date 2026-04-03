@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a1f44; /* DARK BLUE 🔥 */
+  color: white;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* SCROLL INSIDE CARD */
+.features {
+  max-height: 220px;
+  overflow-y: auto;
+  margin: 10px 0;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.7);
+}
+
+/* POPULAR */
+.popular {
+  border: 2px solid #6c5ce7;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #6c5ce7;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* TEXT */
+.price {
+  font-size: 20px;
+}
+
+.setup {
+  font-size: 12px;
+  color: gray;
+}
+
+.tag {
+  font-size: 13px;
+  color: #555;
+}
+
+/* LIST */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.limit li {
+  color: red;
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #6c5ce7, #00c6ff);
+  color: white;
+  font-weight: bold;
+}
+
+/* only card buttons full width */
+.card button {
+  width: 100%;
+}
+
+/* CLICK EFFECT */
+button:active {
+  transform: scale(0.95);
+}
+
+/* COMPARE */
+.compare-btn {
+  width: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* TABLE */
+#tableSection {
+  background: white;
+  color: black;
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #6c5ce7;
+  color: white;
+}
+
+
+/* ========================= */
+/* 🔥 NEW ADD (DO NOT REMOVE) */
+/* ========================= */
+
+/* PLAN TITLE */
+.plan-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* TAG LINE */
+.plan-tag {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* PRICE BOX */
+.price-box {
+  margin: 15px 0;
+}
+
+.setup span {
+  font-size: 11px;
+  color: gray;
+}
+
+.monthly {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ✔ FEATURES */
+.list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #444;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* NOTE TEXT */
+.note {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.list.no li {
+  color: red;
+}
+
+.card {
+  text-align: left; /* 🔥 important */
+}
+
+.features {
+  text-align: left;
+}
+
+/* LIST SPACING */
+.list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* HEADING SPACING */
+.features h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+/* SECTION GAP */
+.features {
+  margin-top: 10px;
+}
+
+/* NOTE TEXT SPACING */
+.note {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+.list li {
+  margin-bottom: 10px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveBg 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moveBg {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100px, 100px);
+  }
+}
+
+/* button fix */
+.compare-btn {
+  position: relative;
+  z-index: 5;
+}
+  
+}
+
+.main-header {
+  width: 100%;
+  padding: 30px 0;   /* 🔥 pehle 15 tha */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* LOGO PERFECT SIZE */
+.logo {
+  height: 150px !important;
+  width: auto !important;
+  display: block;
+}
+
+/* ========================= */
+/* 🔥 CARD FINAL UI UPGRADE */
+/* ========================= */
+
+.card {
+  min-height: 550px; /* lamba card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* TEXT ALIGN */
+.card h3,
+.card p,
+.card li {
+  text-align: left;
+}
+
+/* FEATURES SECTION */
+.features {
+  margin-top: 15px;
+}
+
+/* LIST STYLE */
+.list li {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee; /* line under each item */
+  line-height: 1.5;
+}
+
+/* REMOVE LAST LINE */
+.list li:last-child {
+  border-bottom: none;
+}
+
+/* HOVER EFFECT (smooth standout) */
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
