@@ -351,3 +351,68 @@ body::before {
   font-size: 12px;
   color: #ccc;
 }
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+.cards {
+  flex-wrap: wrap; /* 🔥 cards neeche aa jayenge */
+}
+
+/* TABLE SCROLL MOBILE */
+#tableSection {
+  overflow-x: auto;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%; /* 🔥 full width look */
+  }
+
+  .features {
+    max-height: none; /* scroll hatado mobile pe */
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .logo {
+    max-height: 50px;
+  }
+
+  .compare-btn {
+    width: 90%;
+  }
+
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
